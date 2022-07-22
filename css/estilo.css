@@ -91,7 +91,7 @@ section{
 }
 /* css de la primera section */
 .galeria-dinamica{
-    background-color: rgb(220, 220, 220);
+    background-image: linear-gradient(to right, black , gray);
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -109,7 +109,7 @@ section{
     font-size: 20px;
     font-family:Arial, Helvetica, sans-serif;
     padding: 10px;
-    color: black;
+    color: white;
     
     
     
@@ -130,10 +130,13 @@ section{
     
 }
 .articulos{
-    width: 350px;
-    height: 400px;
+    width: 320px;
+    height: 380px;
     border-radius: 30px;
-
+    transition: height 2s, width 2s;
+}
+.articulos:hover{
+    height: 380px; width: 350px;
 }
 .articulos-destacados p{
     display: inline-flex;
@@ -147,7 +150,8 @@ section{
 .cartas{
     display: inline-flex;
     flex-direction: column;
-    margin: 0 20px;
+    margin: 0 50px;
+    margin-bottom: 40px;
     align-items: center;
     
 }
@@ -272,6 +276,7 @@ color: lightgray;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .div__productos{
@@ -281,7 +286,7 @@ color: lightgray;
     border-radius: 10px;
     align-items: center;
     height: 500px;
-    width: 320px;
+    width: 335px;
     margin: 5px 40px;
     
 }
@@ -290,6 +295,12 @@ color: lightgray;
     height: 350px;
     margin: 5px;
     border-radius: 10px ;
+    transition: width 1s, height 2s;
+    margin-top: 10px;
+}
+.foto-productos:hover{
+    width: 330px;
+    height: 380px;
 }
 .div__productos p {
     font-family: Arial, Helvetica, sans-serif;
@@ -399,9 +410,9 @@ color: lightgray;
     grid-area: section1;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1024px){
 nav li{
-    margin-left: 40px;
+    margin-left: 80px;
 }
 nav a {
     width: auto;
