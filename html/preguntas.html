@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../imagenes/katsu-logo32x32.jpeg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilo.css">
     <link
     rel="stylesheet"
@@ -19,26 +20,90 @@
             </a>
         </div> 
             <!-- debo poner el buscador -->
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="producto.html">Productos</a></li>
-                <li><a href="contactos.html">Contactos</a></li>
-                <li><a href="seguimiento.html">Segui tu Pedido</a></li>
-                <li><a href="preguntas.html">Preguntas Frecuentes</a></li>
-            </ul>
-        </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a 
+                        class="navbar-brand" href="../index.html">KatsuJeans
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="../html/producto.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Productos
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Jeans</a></li>
+                                    <li><a class="dropdown-item" href="../html/producto.html">Buzos</a></li>
+                                    <li><a class="dropdown-item" href="#">Camisas</a></li>
+                                    <li><a class="dropdown-item" href="#">Zapatillas</a></li>
+                                    <li><a class="dropdown-item" href="#">Combos</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                </ul>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../html/contactos.html">Contacto</a>
+                                </li>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/seguimiento.html">Seguir tu producto</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../html/preguntas.html">Preguntas Frecuentes</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
     </header>
     <section class="preguntas">
         <h2> Preguntas Frecuentes</h2>
-        <h4 class="animate__animated animate__flash"> ¿Que talles manejan?</h4>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis minus nulla, commodi, dolor rem optio suscipit sequi aut sunt nobis expedita est incidunt dolorem ullam delectus eum vero consequatur veritatis?</p>
-        <h4 class="animate__animated animate__flash">¿Reciben tarjetas?</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda voluptate placeat error. Veritatis voluptates necessitatibus dolorem natus nisi vel voluptate, ut impedit distinctio. Modi fugiat facilis quo eius ratione!</p>
-        <h4 class="animate__animated animate__flash">¿Que tiempo tienen las prendas para cambio?</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil similique molestiae atque excepturi quos, libero nam error cumque. Saepe minus deserunt molestiae et, culpa quo eligendi ad accusantium optio.</p>
-        <h4 class="animate__animated animate__flash">¿Hacen envios?</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minima eveniet quidem quae consectetur eum nihil, earum voluptatum rerum iusto aspernatur aut adipisci cupiditate ipsam iste nam sapiente! Qui, adipisci.</p> 
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Que talles manejan?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        En nuestro local podes encontrar todos los talles desde el s hasta el xl especial para padres!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        Como los puedo contactar?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                        Podes hacer click aqui o ir directamente a nuestra pagina "contactos"
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        Realizan envios?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                        Si!! Realizamos envios todos los dias a traves de Correo Argentino y Mercado envios podes ver todo en nuestra pagina "Segui tu pedido"
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <a href="https://api.whatsapp.com/send?phone=5493815432199" class="whatsapp" target="_blank">
         <img src="../imagenes/whatsapp.png" alt="Imagen whatsapp">
@@ -66,5 +131,6 @@
             </div>
         </div>   
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
