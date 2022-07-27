@@ -113,10 +113,32 @@
                         <textarea name="" id="coment" cols="75" rows="5"></textarea>
                     </div>
                     <div class="botones">
-                        <input type="submit" value="Enviar">
-                        <input type="reset" value="Limpiar">
+                        <input type="submit" type="button" value="Enviar" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#enviar1">
+                        <input type="reset" type="button" value="Limpiar" class="btn btn-primary" data-bs-toggle="modal">
                     </div>
                 
+                    <div class="modal fade" id="enviar1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="ej-modal">Se envio con exito!</h5>
+                                    <button type="submit" class="btn-close" data-bs-dismiss="modal" aria-label="Close" id="enviar1">
+            
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Gracias por mandarnos tu opinion :D</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                        Cerrar
+            
+                                    </button>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 
 
                 </fieldset>
@@ -134,7 +156,9 @@
     <a href="https://api.whatsapp.com/send?phone=5493815432199" class="whatsapp" target="_blank">
         <img src="../imagenes/whatsapp.png" alt="Imagen whatsapp">
 
-    </a> 
+    </a>
+
+        
     <footer>
         <div class="h3-contenedor">
             <h3 class="footerMediosPago">Medios de Pago</h3>

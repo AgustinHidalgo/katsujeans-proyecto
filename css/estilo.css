@@ -268,6 +268,7 @@ color: lightgray;
     height: 500px ;
     border-radius: 10px;
     margin-top: 10px;
+    margin: 10px 20px;
 }
 .card img{
     width: 300px;
@@ -358,7 +359,7 @@ color: lightgray;
     display: inline-block;
     margin: 0 20px;
     grid-area: section1;
-    
+    grid-template-columns: 80%;
 
 }
 
@@ -367,12 +368,13 @@ color: lightgray;
     display: flex;
     
     margin: 0;
-    margin-left: 130px;
+    margin-left: 100px;
     height: 100%;
     grid-area: section2;
     justify-items: center;
     align-items: center;
     flex-direction: column;
+    grid-template-columns: 20%;
 }
 .local iframe{
     width: 70%;
@@ -381,6 +383,23 @@ color: lightgray;
 }
 .local h5{
     margin-top: 10px;
+}
+
+#nom1{
+    width: 170px;
+}
+#mail{
+    width: 250px;
+}
+
+.modal-title,
+.modal-body{
+    color: black;
+}
+.botones input{
+    background-color: black;
+    border: black;
+    margin: 0 5px;
 }
 /*  aqui empieza la pagina preguntas*/
 
@@ -440,7 +459,7 @@ color: lightgray;
 .section1__seguimiento{
     padding: 10px;
     padding-bottom: 53px;
-    margin-top: 40px;
+    margin: 10vh;
     grid-area: section1;
 }
 
