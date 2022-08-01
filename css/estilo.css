@@ -257,7 +257,7 @@ color: lightgray;
     color: #0d6efd;
 }
 
-/* aqui empieza css pagina producto */
+/* aqui empieza css pagina buzos */
 
 .conteiner-productos{
     background-color: rgb(220, 220, 220);
@@ -273,29 +273,22 @@ color: lightgray;
     width: 340px ;
     height: 500px ;
     border-radius: 10px;
-    margin-top: 10px;
-    margin: 10px 20px;
+    
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .card img{
     width: 300px;
     height: 350px;
     margin: 0 auto;
-    padding-top: 10px;
+    
     border-radius: 15px ;
 }
-.card-body{
-    margin-left: 6px;
-}
-.card-body button{
-    font-weight: bold;
-    
-    text-align: center;
-    align-items: center;
-    padding: 3px;
-    border-radius: 5px;
-    margin-bottom: 8px;
-    
-}
+
+
 .card-link{
     color: black;
     text-decoration: none;
@@ -331,8 +324,6 @@ color: lightgray;
     margin: 5px;
     
 }
-
-
 .div__productos button{
     font-size: 15px;
     width: 100px;
@@ -346,8 +337,98 @@ color: lightgray;
     
 }
 
+/* css de jeans */
+.card1{
+    width: 340px ;
+    height: 550px ;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 10px 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1 img {
+    width: 310px;
+    height: 430px;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
+.card-body1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-text{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.card-body1 button{
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* css pagina camisas */
+.card2{
+    width: 350px;
+    height: 460px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card2 img{
+    width: 300px;
+    height: 350px;
+}
+/* css pagina zapatillas*/
+.card3{
+    width: 330px;
+    height: 480px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card3 img{
+    width: 300px;
+    height: 370px;
+}
+.card4{
+    width: 330px;
+    height: 400px;
+    margin: 0 20px;
+    
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card4 img{
+    width: 300px;
+}
+.card-body4{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
 /** css de la pagina accesorios **/
-.sec-accesiorios{
+.sec-accesorios{
     margin: 150px;
     display: flex;
     justify-items: center;
@@ -355,11 +436,9 @@ color: lightgray;
     
     font-size: 20px;
 }
-.sec-accesiorios h1{
-display: flex;
-text-align: center;
-justify-items: center;
-align-content: center;
+.sec-accesorios h1{
+    text-align: center;
+    margin: 0 auto;
 }
 /* css de la pagina contactos*/
 
