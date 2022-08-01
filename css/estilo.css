@@ -574,9 +574,7 @@ color: lightgray;
 }
 
 @media (max-width: 1024px){
-nav li{
-    margin-left: 80px;
-}
+
 nav a {
     width: auto;
     padding: 5px;
@@ -585,9 +583,10 @@ nav a {
     margin: 10px 20px;
 }
 .conteiner-productos{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    margin-bottom: 250px;
 }
 .div__productos{
     margin: 20px 5px;
@@ -595,8 +594,13 @@ nav a {
 .local{
     margin: 0;
 }
-
-
+.footerNuestrasRedes{
+    margin-right: 40px;
+    width: auto;
+}
+.footerMediosPago{
+    width: auto;
+}
 
 
 }
@@ -765,16 +769,24 @@ nav {
     margin: 0;
 
 }
-
+.section1__seguimiento{
+    margin: 0;
+}
 .conteiner-contacto{
     width: auto;
 }
-
+.card,
+.card1,
+.card2,
+.card3,
+.card4{
+    margin: 20px 0;
+}
 .cartas{
     margin: 10px;
 }
 .footerNuestrasRedes{
-    margin-right: 55px;
+    margin-right: 15px;
 }
 footer{
     width: auto;
@@ -797,7 +809,9 @@ footer{
     flex-wrap: wrap;
     width: 200px;
 }
-
+.sec-accesorios{
+    margin: 70px 0;
+}
 .imagenes-tarjetas img{
     margin: 3px;
 }
@@ -807,7 +821,9 @@ footer{
 .copy{
     display: none;
 }
-
+.preguntas{
+    margin-top: 0;
+}
 .formulario{
     width: 100%;
     display: flex;
