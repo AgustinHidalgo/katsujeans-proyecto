@@ -37,9 +37,12 @@ header {
 
 
 }
-
+.nav-link{
+    margin-left: 10px;
+}
 .navbar-brand{
     padding: 5px;
+    
 }
 .d-flex button{
     color: white;
