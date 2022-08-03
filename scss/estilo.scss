@@ -1,0 +1,862 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+@import "variables";
+body{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section1"
+    "section2"
+    "footer";
+    grid-template-rows: 1fr;
+    margin-left: 1px;
+    background-color: $color-fondo;
+}
+header {
+    padding: 1em;
+    background-color: $color-fondo;
+    height: 190px;
+    grid-area: header;
+    
+}
+.header-img{
+    display: inline-flex;
+    flex-direction: row;
+    
+    
+}
+#logo2{
+    
+    margin-left: 20px;
+    margin-right: 30px;
+    width: 150px;
+    
+
+
+}
+.nav-link{
+    margin-left: 10px;
+}
+.navbar-brand{
+    padding: 5px;
+    
+}
+.d-flex button{
+    color: $color-blanco;
+    border-color:$color-blanco;
+}
+.d-flex button:hover{
+    background-color: gray;
+    border-color: $color-blanco;
+}
+
+
+nav { 
+    width: 99%;
+    background-color: rgb(0, 0, 0);
+
+}
+
+
+
+nav ul {
+    list-style: none;
+    
+}
+
+
+
+
+
+section{
+    background-color: $color-fondo;
+    margin-left: 2px;
+}
+/* css de la primera section */
+.galeria-dinamica{
+    background-image: linear-gradient(to right, black , gray);
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    grid-area: section1;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 40px;
+    
+}
+.fotos-dinamicas{
+    width: 70vh;
+    height: 70vh;
+    border-radius: 10px;
+}
+.galeria-dinamica p {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: $color-blanco;
+    
+    
+    
+}
+/* css de la segunda section */
+.articulos-destacados {
+    padding: 20px;
+    grid-area: section2;
+    background-color: $color-fondo;
+}
+.articulos-destacados h2{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    padding: 0 10px 10px 40px;
+    
+}
+.articulos{
+        width: 320px;
+        height: 380px;
+        border-radius: 30px;
+        transition: height 2s, width 2s;
+        &:hover{
+            height: 380px; width: 350px;
+        }
+}
+
+.articulos-destacados p{
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 8px;
+}
+.cartas{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 50px;
+    margin-bottom: 40px;
+    align-items: center;
+    
+}
+.cartas button{
+    font-size: 20px;
+    width: 200px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    align-items: center;
+    padding: 1px;
+    border-radius: 5px;
+    
+}
+
+
+
+
+
+
+
+
+
+/* css del wasap */ 
+.wasap {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    
+}
+
+.whatsapp img {
+    width: 100px;
+    height: 50px;
+    
+    
+    
+}
+/* css del footer */
+footer{
+    grid-area: footer;
+    background-color: rgb(30, 30, 30);
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    color: $color-blanco;
+    height: 100%;
+    
+}
+.contenedor-footer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.footerMediosPago{
+    width: 20%;
+    display: inline-flex;
+    padding: 5px 10px;
+    
+}
+.footerNuestrasRedes{
+    width: 17%;
+    display: inline-flex;
+    padding: 5px 5px;
+}
+.h3-contenedor{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #0d6efd;
+}
+footer div{
+    padding-top: 10px;
+}
+.imagenes-tarjetas{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 5px;
+}
+.tarjetas{
+    width: 60px;
+    height: 40px;
+    padding: 2px;
+}
+.tarjetasN{
+    width: 50px;
+    height: 40px;
+}
+footer p{
+color: lightgray;
+ 
+}
+.imagenes-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 120px;
+    padding-bottom: 30px;
+}
+.redes-footer{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding-top: 7px;
+    
+}
+.redes-footer1{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    
+    
+}
+.copy p{
+    color: #0d6efd;
+}
+
+/* aqui empieza css pagina buzos */
+
+.conteiner-productos{
+    background-color: $color-fondo;
+    height: 100%;
+    grid-area: section1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 160px;
+}
+.card{
+    width: 340px ;
+    height: 500px ;
+    border-radius: 10px;
+    
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 300px;
+    height: 350px;
+    margin: 0 auto;
+    
+    border-radius: 15px ;
+}
+
+
+.card-link{
+    color: black;
+    text-decoration: none;
+}
+.div__productos{
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    height: 500px;
+    width: 335px;
+    margin: 5px 40px;
+    
+}
+.foto-productos{
+    width: 300px;
+    height: 350px;
+    margin: 5px;
+    border-radius: 10px ;
+    transition: width 1s, height 2s;
+    margin-top: 10px;
+}
+.foto-productos:hover{
+    width: 330px;
+    height: 380px;
+}
+.div__productos p {
+    
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px;
+    
+}
+.div__productos button{
+    font-size: 15px;
+    width: 100px;
+    font-weight: bold;
+    
+    text-align: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 5px;
+    
+}
+
+/* css de jeans */
+.card1{
+    width: 340px ;
+    height: 550px ;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin: 10px 20px;
+    background-color: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1 img {
+    width: 310px;
+    height: 430px;
+    align-items: center;
+    justify-items: center;
+    margin: 0px;
+}
+.card-body1{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-text{
+    margin-right: 5px;
+    text-align: center;
+}
+
+.card-body1 button{
+    border-radius: 10px;
+    padding: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 5px;
+}
+/* css pagina camisas */
+.card2{
+    width: 350px;
+    height: 460px;
+    margin: 10px 20px;
+    border-radius: 10px;
+    background-color: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card2 img{
+    width: 300px;
+    height: 350px;
+}
+/* css pagina zapatillas*/
+.card3{
+    width: 330px;
+    height: 480px;
+    margin: 5px 20px;
+    border-radius: 10px;
+    background-color: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card3 img{
+    width: 300px;
+    height: 370px;
+}
+.card4{
+    width: 330px;
+    height: 400px;
+    margin: 0 20px;
+    
+    border-radius: 10px;
+    background-color: $color-blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card4 img{
+    width: 300px;
+}
+.card-body4{
+    margin: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/** css de la pagina accesorios **/
+.sec-accesorios{
+    margin: 150px;
+    display: flex;
+    justify-items: center;
+    align-content: center;
+    
+    font-size: 20px;
+}
+.sec-accesorios h1{
+    text-align: center;
+    margin: 0 auto;
+}
+/* css de la pagina contactos*/
+
+.conteiner-contacto{
+    display: flex;
+    flex-direction: row;
+    background-color: $color-fondo;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.formulario{
+    padding: 10px;
+    background-color: rgb(82, 81, 81);
+    width: 100%;
+    color: antiquewhite;
+    display: inline-block;
+    margin: 0 20px;
+    grid-area: section1;
+    grid-template-columns: 80%;
+
+}
+
+.local{
+    width: 100%;
+    display: flex;
+    
+    margin: 0;
+    margin-left: 100px;
+    height: 100%;
+    grid-area: section2;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 20%;
+}
+.local iframe{
+    width: 70%;
+    padding: 10px 0;
+    
+}
+.local h5{
+    margin-top: 10px;
+}
+
+#nom1{
+    width: 170px;
+}
+#mail{
+    width: 250px;
+}
+
+.modal-title,
+.modal-body{
+    color: black;
+}
+.botones input{
+    background-color: black;
+    border: black;
+    margin: 0 5px;
+}
+/*  aqui empieza la pagina preguntas*/
+
+.preguntas{
+    margin: 15px;
+    margin-top: 40px ;
+    margin-bottom: 34px;
+    grid-area: section1;
+}
+.preguntas h2{
+    margin: 15px;
+}
+.accordion-item{
+    padding: 20px;
+    background-color: gray;
+    color: $color-blanco;
+    
+}
+.accordion-header{
+    background-color: gray;
+    color: $color-blanco;
+}
+.accordion-button,
+.collapsed::after{
+    background-color: gray;
+    color:$color-blanco;
+    
+}
+.accordion-button:hover{
+    background-color: gray;
+    border: none;
+    color: $color-blanco;
+}
+.accordion-button::after{
+    color: $color-blanco;
+}
+
+
+.accordion-button:not(.collapsed){
+    background-color: gray;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* aqui empieza la pagina de seguimiento */
+.section1__seguimiento{
+    padding: 10px;
+    padding-bottom: 53px;
+    margin: 10vh;
+    grid-area: section1;
+}
+.iconify{
+    font-size: 35px;
+    margin: 0 13px;
+    margin-bottom: 13px;
+    
+    font-weight: lighter;
+}
+
+@media (max-width: 1024px){
+
+nav a {
+    width: auto;
+    padding: 5px;
+}
+.cartas{
+    margin: 10px 20px;
+}
+.conteiner-productos{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px 0;
+    margin-bottom: 250px;
+}
+.div__productos{
+    margin: 20px 5px;
+}
+.local{
+    margin: 0;
+}
+.footerNuestrasRedes{
+    margin-right: 40px;
+    width: auto;
+}
+.footerMediosPago{
+    width: auto;
+}
+
+
+}
+@media (max-width: 768px) {
+    header ul {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-content: center;
+        
+        
+
+    }
+    header a{
+        height: auto;
+        padding: 5px;
+    }
+    header li{
+        padding: 5px;
+    }
+    header{
+        height: auto;
+    }
+    nav{
+        height: auto;
+        margin-left: 0;
+        
+    }
+    nav li {
+        margin-left: 0 ;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        
+    }
+
+    /** primera section del index **/
+    .galeria-dinamica{
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    }
+    .fotos-dinamicas{
+        width: 100%;
+    }
+    .galeria-dinamica p {
+        margin-top: 15px;
+    }
+
+    /* segunda section del index*/
+
+    .articulos-destacados{
+        padding: 0;
+        margin: 0;
+    }
+    .conteiner-destacados-grid{
+        display:grid;
+        grid-template-columns: auto auto;
+        padding: 0;
+    }
+    .cartas{
+        margin: 15px 0;
+    }
+    /* footer */
+    .imagenes-footer{
+        padding-right: 30px;
+        padding-top: 0;
+    }
+    
+
+
+    /* aqui empieza pagina producto */
+    .conteiner-productos{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+    .footerNuestrasRedes{
+        margin-right: 50px;
+    }
+    .imagenes-footer{
+        margin-right: 40px;
+    }
+    
+    /* aqui empieza pagina contacto */
+    .conteiner-contacto{
+        display: flex;
+        flex-direction: column;
+    } 
+    .local{
+        margin-top: 20px;
+        margin-left: 20px;
+        justify-content: start;
+        align-items: flex-start;
+    }
+    .local iframe{
+        width: 50%;
+    }
+    .formulario{
+        width: 715px;
+    }
+    .formulario div {
+        margin: 3px;
+    }
+    .botones input{
+        width: 250px;
+        padding: 8px;
+    }
+    .formulario div textarea{
+        width: 500px;
+    }
+    .formulario div input{
+        padding: 3px;
+    }
+    .formulario div label{
+        font-size: 20px;
+    }
+
+    /* aqui empieza la pagina seguimiento*/
+    .section1__seguimiento p{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px;
+        
+    }
+
+    /* aqui empieza la pagina de preguntas */
+    .preguntas h2{
+        font-style: oblique;
+    }
+    .preguntas h4{
+        font-size: 16px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        animation: none;
+
+    }
+    .preguntas p{
+        font-family: cursive;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+} /** llave de cierre de la media 767px **/
+
+
+@media (max-width: 480px) {
+body{
+    margin: 0;
+    padding: 0;
+}
+header{
+    margin: 0;
+}
+nav {
+    margin: 0;
+
+}
+.section1__seguimiento{
+    margin: 0;
+}
+.conteiner-contacto{
+    width: auto;
+}
+.card,
+.card1,
+.card2,
+.card3,
+.card4{
+    margin: 20px 0;
+}
+.cartas{
+    margin: 10px;
+}
+.footerNuestrasRedes{
+    margin-right: 15px;
+}
+footer{
+    width: auto;
+}
+.imagenes-footer{
+    margin-right: 40px;
+}
+.conteiner-destacados-grid{
+    display: flex;
+    flex-direction: column;
+}
+.conteiner-productos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes-tarjetas{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+}
+.sec-accesorios{
+    margin: 70px 0;
+}
+.imagenes-tarjetas img{
+    margin: 3px;
+}
+.h3-contenedor h3{
+    width: auto;
+}
+.copy{
+    display: none;
+}
+.preguntas{
+    margin-top: 0;
+}
+.formulario{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 5px 15px;
+    font-size: small;
+
+}
+.botones input{
+    width: 100px;
+}
+.botones{
+    width: 300px;
+}
+.formulario h4{
+    width: 100%;
+}
+legend{
+    width: 100%;
+}
+fieldset{
+    border: none;
+    width: 300px
+}
+.formulario div textarea{
+    width: 350px;
+}
+.local iframe{
+    width: 70%;
+}
+
+
+
+}
