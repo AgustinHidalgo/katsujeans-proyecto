@@ -1,3 +1,51 @@
 // variables colores
 $color-fondo: rgb(220, 220, 220);
 $color-blanco: white;
+
+//mixins
+@mixin medidas ($width, $height) {
+    width: $width;
+    height: $height;
+}
+// extends
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card1{
+    @extend .card;
+    @include medidas (340px, 550px);
+}
+.card2{
+    @extend .card;
+    @include medidas (350px, 460px);
+
+}
+.card3{
+    @extend .card;
+    @include medidas (330px, 480px);
+}
+.card4{
+    @extend .card;
+    @include medidas (330px, 400px);
+}
+
+$estilo-botones: (
+    fuente: arial sans-serif,
+    negrita: bold,
+    tfuente: 15px,
+    borde: 10px,
+    centrado: center,
+    espaciado: 3px,
+) ;
+
+.card-body1 button{
+    font-family: map-get($estilo-botones, fuente);
+    font-weight: map-get($estilo-botones,negrita);
+    font-size: map-get($estilo-botones, tfuente);
+    border-radius: map-get($estilo-botones,borde);
+    padding: map-get($estilo-botones, espaciado);
+} 

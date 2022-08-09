@@ -3,6 +3,42 @@
   padding: 0;
 }
 
+.card, .card4, .card3, .card2, .card1 {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1 {
+  width: 340px;
+  height: 550px;
+}
+
+.card2 {
+  width: 350px;
+  height: 460px;
+}
+
+.card3 {
+  width: 330px;
+  height: 480px;
+}
+
+.card4 {
+  width: 330px;
+  height: 400px;
+}
+
+.card-body1 button {
+  font-family: arial sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 3px;
+}
+
 body {
   display: grid;
   grid-template-areas: "header" "section1" "section2" "section3" "footer";
@@ -62,36 +98,22 @@ section {
 }
 
 /* css de la primera section */
-.galeria-dinamica {
-  background-image: linear-gradient(to right, black, gray);
-  padding: 10px;
+.section-carrousel {
   display: flex;
   flex-direction: column;
   grid-area: section1;
-  border-radius: 10px;
-  margin: 10px;
-  margin-top: 40px;
-}
-
-.fotos-dinamicas {
-  width: 70vh;
-  height: 70vh;
-  border-radius: 10px;
-}
-
-.galeria-dinamica p {
-  font-size: 20px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
-  color: white;
+  margin-top: 50px;
 }
 
 .quienes-somos {
   grid-area: section2;
-  padding: 30px;
-  margin: 10px;
-  background-color: rgb(30, 30, 30);
-  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+  font-family: arial sans-serif;
+  width: 100%;
+  font-size: 20px;
 }
 
 /* css de la segunda section */
@@ -114,11 +136,6 @@ section {
   width: 320px;
   height: 380px;
   border-radius: 30px;
-  transition: height 2s, width 2s;
-}
-.articulos:hover {
-  height: 380px;
-  width: 350px;
 }
 
 .articulos-destacados p {
@@ -170,7 +187,7 @@ footer {
   width: 100%;
   display: inline-block;
   color: white;
-  height: 100%;
+  height: 110%;
 }
 
 .contenedor-footer {
@@ -263,7 +280,7 @@ footer p {
   margin-bottom: 160px;
 }
 
-.card {
+.card, .card1, .card2, .card3, .card4 {
   width: 340px;
   height: 500px;
   border-radius: 10px;
@@ -274,7 +291,7 @@ footer p {
   align-items: center;
 }
 
-.card img {
+.card img, .card1 img, .card2 img, .card3 img, .card4 img {
   width: 300px;
   height: 350px;
   margin: 0 auto;

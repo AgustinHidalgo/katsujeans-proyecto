@@ -77,38 +77,24 @@ section{
     margin-left: 2px;
 }
 /* css de la primera section */
-.galeria-dinamica{
-    background-image: linear-gradient(to right, black , gray);
-    padding: 10px;
+.section-carrousel{
     display: flex;
     flex-direction: column;
     grid-area: section1;
-    border-radius: 10px;
-    margin: 10px;
-    margin-top: 40px;
+    margin-top: 50px;
     
 }
-.fotos-dinamicas{
-    width: 70vh;
-    height: 70vh;
-    border-radius: 10px;
-    
-}
-.galeria-dinamica p {
-    font-size: 20px;
-    font-family:Arial, Helvetica, sans-serif;
-    padding: 10px;
-    color: $color-blanco;
-    
-    
-    
-}
+
 .quienes-somos{
     grid-area: section2;
-    padding: 30px;
-    margin: 10px;
-    background-color: rgb(30, 30, 30);
-    color: $color-blanco;
+    padding: 10px;
+    margin-top: 20px;
+    
+    color: black;
+    font-weight: map-get($estilo-botones, negrita);
+    font-family: map-get($estilo-botones, fuente);
+    width: 100%;
+    font-size: 20px;
 }
 /* css de la segunda section */
 .articulos-destacados {
@@ -129,10 +115,8 @@ section{
         width: 320px;
         height: 380px;
         border-radius: 30px;
-        transition: height 2s, width 2s;
-        &:hover{
-            height: 380px; width: 350px;
-        }
+        
+        
 }
 
 .articulos-destacados p{
@@ -195,7 +179,7 @@ footer{
     width: 100%;
     display: inline-block;
     color: $color-blanco;
-    height: 100%;
+    height: 110%;
     
 }
 .contenedor-footer{
