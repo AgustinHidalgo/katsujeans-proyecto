@@ -1,0 +1,104 @@
+/* css del footer */
+footer{
+    grid-area: footer;
+    background-color: rgb(30, 30, 30);
+    height: auto;
+    width: 100%;
+    display: inline-block;
+    color: $color-blanco;
+    height: 100%;
+    
+}
+.contenedor-footer{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.footerMediosPago{
+    width: 20%;
+    display: inline-flex;
+    padding: 5px 0px;
+    padding-left: 58px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerNuestrasRedes{
+    width: 17%;
+    display: inline-flex;
+    padding: 5px 0;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footernavegacion{
+    margin-left: 5px;
+    padding: 3px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footerEnvios{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 55px;
+    padding: 5px;
+}
+.h3-contenedor{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #0d6efd;
+}
+
+
+.imagenes-tarjetas{
+    width: 200px;
+    
+    
+}
+.tarjetas{
+    width: 50px;
+    height: 30px;
+    margin: 3px;
+    
+}
+
+footer p{
+color: lightgray;
+ 
+}
+.imagenes-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 120px;
+    padding-bottom: 30px;
+}
+.iconify{
+    font-size: 25px;
+    margin-right: 25px;
+    
+    font-weight: lighter;
+}
+.wasap{
+    margin-bottom: 20px;
+
+}
+.nav-footer{
+    display: flex;
+    
+}
+.nav-footer li{
+    list-style: none;
+    margin: 0;
+    
+}
+.nav-footer a {
+    text-decoration: none;
+    
+}
+.nav-footer ul{
+    margin-left: 5px;
+    padding: 5px;
+}

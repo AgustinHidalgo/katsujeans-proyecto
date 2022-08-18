@@ -1,4 +1,5 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -39,10 +40,116 @@
   padding: 3px;
 }
 
+/* css del footer */
+footer {
+  grid-area: footer;
+  background-color: rgb(30, 30, 30);
+  height: auto;
+  width: 100%;
+  display: inline-block;
+  color: white;
+  height: 100%;
+}
+
+.contenedor-footer {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerMediosPago {
+  width: 20%;
+  display: inline-flex;
+  padding: 5px 0px;
+  padding-left: 58px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerNuestrasRedes {
+  width: 17%;
+  display: inline-flex;
+  padding: 5px 0;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footernavegacion {
+  margin-left: 5px;
+  padding: 3px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footerEnvios {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 55px;
+  padding: 5px;
+}
+
+.h3-contenedor {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  color: #0d6efd;
+}
+
+.imagenes-tarjetas {
+  width: 200px;
+}
+
+.tarjetas {
+  width: 50px;
+  height: 30px;
+  margin: 3px;
+}
+
+footer p {
+  color: lightgray;
+}
+
+.imagenes-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-right: 120px;
+  padding-bottom: 30px;
+}
+
+.iconify {
+  font-size: 25px;
+  margin-right: 25px;
+  font-weight: lighter;
+}
+
+.wasap {
+  margin-bottom: 20px;
+}
+
+.nav-footer {
+  display: flex;
+}
+
+.nav-footer li {
+  list-style: none;
+  margin: 0;
+}
+
+.nav-footer a {
+  text-decoration: none;
+}
+
+.nav-footer ul {
+  margin-left: 5px;
+  padding: 5px;
+}
+
 body {
   display: grid;
   grid-template-areas: "header" "section1" "section2" "section3" "footer";
-  grid-template-rows: 1fr;
   margin-left: 1px;
   background-color: rgb(220, 220, 220);
 }
@@ -167,95 +274,6 @@ section {
 .whatsapp img {
   width: 100px;
   height: 50px;
-}
-
-/* css del footer */
-footer {
-  grid-area: footer;
-  background-color: rgb(30, 30, 30);
-  height: auto;
-  width: 100%;
-  display: inline-block;
-  color: white;
-  height: 110%;
-}
-
-.contenedor-footer {
-  display: inline-flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.footerMediosPago {
-  width: 20%;
-  display: inline-flex;
-  padding: 5px 10px;
-}
-
-.footerNuestrasRedes {
-  width: 17%;
-  display: inline-flex;
-  padding: 5px 5px;
-}
-
-.h3-contenedor {
-  width: 100%;
-  display: inline-flex;
-  justify-content: space-between;
-  padding-top: 10px;
-  color: #0d6efd;
-}
-
-footer div {
-  padding-top: 10px;
-}
-
-.imagenes-tarjetas {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 5px;
-}
-
-.tarjetas {
-  width: 60px;
-  height: 40px;
-  padding: 2px;
-}
-
-.tarjetasN {
-  width: 50px;
-  height: 40px;
-}
-
-footer p {
-  color: lightgray;
-}
-
-.imagenes-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  padding-right: 120px;
-  padding-bottom: 30px;
-}
-
-.redes-footer {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  padding-top: 7px;
-}
-
-.redes-footer1 {
-  width: 70px;
-  height: 70px;
-  display: flex;
-}
-
-.copy p {
-  color: #0d6efd;
 }
 
 /* aqui empieza css pagina buzos */
@@ -565,13 +583,6 @@ fieldset div {
   padding-bottom: 53px;
   margin: 10vh;
   grid-area: section1;
-}
-
-.iconify {
-  font-size: 35px;
-  margin: 0 13px;
-  margin-bottom: 13px;
-  font-weight: lighter;
 }
 
 @media (max-width: 1024px) {
