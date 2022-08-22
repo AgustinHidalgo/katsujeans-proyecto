@@ -1,0 +1,64 @@
+/* css de la pagina contactos*/
+
+.conteiner-contacto{
+    display: flex;
+    flex-direction: row;
+    background-color: $color-fondo;
+    width: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    justify-content: space-between;
+}
+.formulario{
+    padding: 10px;
+    background-color: rgb(82, 81, 81);
+    width: 100%;
+    color: antiquewhite;
+    display: inline-block;
+    margin: 0 20px;
+    grid-area: section1;
+    grid-template-columns: 80%;
+
+}
+fieldset div{
+    padding: 5px 0;
+}
+
+.local{
+    width: 100%;
+    display: flex;
+    
+    margin: 0;
+    margin-left: 100px;
+    height: 100%;
+    grid-area: section2;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    grid-template-columns: 20%;
+}
+.local iframe{
+    width: 70%;
+    padding: 10px 0;
+    
+}
+.local h5{
+    margin-top: 10px;
+}
+
+#nom1{
+    width: 170px;
+}
+#mail{
+    width: 250px;
+}
+
+.modal-title,
+.modal-body{
+    color: black;
+}
+.botones input{
+    background-color: black;
+    border: black;
+    margin: 0 5px;
+}

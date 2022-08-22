@@ -1,0 +1,24 @@
+/* aqui empieza css pagina buzos */
+
+.conteiner-productos{
+    background-color: $color-fondo;
+    height: 100%;
+    grid-area: section1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 160px;
+}
+.card{
+    border-radius: 10px;
+    margin: 0 20px;
+}
+.card img{
+    margin: 0 auto;
+    border-radius: 15px ;
+}
+.card-link{
+    color: black;
+    text-decoration: none;
+}

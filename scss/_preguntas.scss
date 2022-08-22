@@ -1,0 +1,40 @@
+/*  aqui empieza la pagina preguntas*/
+
+.preguntas{
+    margin: 15px;
+    margin-top: 40px ;
+    margin-bottom: 34px;
+    grid-area: section1;
+}
+.preguntas h2{
+    margin: 15px;
+}
+.accordion-item{
+    padding: 20px;
+    background-color: gray;
+    color: $color-blanco;
+    
+}
+.accordion-header{
+    background-color: gray;
+    color: $color-blanco;
+}
+.accordion-button,
+.collapsed::after{
+    background-color: gray;
+    color:$color-blanco;
+    
+}
+.accordion-button:hover{
+    background-color: gray;
+    border: none;
+    color: $color-blanco;
+}
+.accordion-button::after{
+    color: $color-blanco;
+}
+
+
+.accordion-button:not(.collapsed){
+    background-color: gray;
+}
