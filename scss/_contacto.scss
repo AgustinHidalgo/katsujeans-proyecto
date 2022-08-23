@@ -18,7 +18,7 @@
     margin: 0 20px;
     grid-area: section1;
     grid-template-columns: 80%;
-
+    font-family:sans-serif;
 }
 fieldset div{
     padding: 5px 0;
@@ -27,7 +27,8 @@ fieldset div{
 .local{
     width: 100%;
     display: flex;
-    
+    font-family: $fuente-letras;
+    font-weight: bolder;
     margin: 0;
     margin-left: 100px;
     height: 100%;

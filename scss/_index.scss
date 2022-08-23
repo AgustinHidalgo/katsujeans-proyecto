@@ -4,7 +4,6 @@ body{
     "header"
     "section1"
     "section2"
-    "section3"
     "footer";
     
     margin-left: 1px;
@@ -83,7 +82,8 @@ section{
 /* css de la segunda section */
 .articulos-destacados {
     padding: 20px;
-    grid-area: section3;
+    margin: 30px 0;
+    grid-area: section2;
     background-color: $color-fondo;
 }
 .articulos-destacados h2{
@@ -99,8 +99,6 @@ section{
         width: 320px;
         height: 380px;
         border-radius: 30px;
-        
-        
 }
 
 .articulos-destacados p{

@@ -18,20 +18,19 @@
 .card1{
     @extend .card;
     @include medidas (340px, 550px);
+    font-family: $fuente-letras;
 }
 .card2{
     @extend .card;
-    @include medidas (350px, 460px);
+    @include medidas (350px, 490px);
+    font-family: $fuente-letras;
+}
+.card3, .card4{
+    @extend .card;
+    @include medidas (360px, 480px);
+    font-family: $fuente-letras;
+}
 
-}
-.card3{
-    @extend .card;
-    @include medidas (330px, 480px);
-}
-.card4{
-    @extend .card;
-    @include medidas (330px, 400px);
-}
 .card img{
     @include medidas(300px, 350px);
 }
@@ -42,10 +41,10 @@
     @include medidas(300px, 350px);
 }
 .card3 img{
-    @include medidas(300px, 370px);
+    @include medidas(350px, 300px);
 }
-.card4 img{
-    @include medidas(300px, 190px);
+.card4 img {
+    @include medidas(300px, 300px);
 }
 $estilo-botones: (
     fuente: arial sans-serif,
