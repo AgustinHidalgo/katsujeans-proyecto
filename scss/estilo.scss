@@ -406,3 +406,28 @@ fieldset{
 
 
 }
+
+@media (max-width: 375px){
+    .footerNuestrasRedes{
+        margin: 0;
+        font-size: 18px;
+    }
+    .imagenes-footer{
+        margin-right: 10px;
+    }
+    .footerMediosPago{
+        font-size: 18px;
+    }
+    .footerEnvios{
+        font-size: 18px;
+    }
+    .envios-fotos{
+        margin-left: 40px;
+    }
+    .imagenes-tarjetas{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        
+    }
+}

@@ -201,6 +201,10 @@ footer p {
   padding-bottom: 30px;
 }
 
+.imagenes-footer a {
+  height: 30px;
+}
+
 .iconify {
   font-size: 25px;
   margin-right: 25px;
@@ -841,6 +845,29 @@ fieldset div {
   }
   .local iframe {
     width: 70%;
+  }
+}
+@media (max-width: 375px) {
+  .footerNuestrasRedes {
+    margin: 0;
+    font-size: 18px;
+  }
+  .imagenes-footer {
+    margin-right: 10px;
+  }
+  .footerMediosPago {
+    font-size: 18px;
+  }
+  .footerEnvios {
+    font-size: 18px;
+  }
+  .envios-fotos {
+    margin-left: 40px;
+  }
+  .imagenes-tarjetas {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
   }
 }
 
