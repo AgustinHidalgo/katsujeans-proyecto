@@ -96,7 +96,7 @@ nav a {
         justify-items: center;
         
     }
-
+    
     /** primera section del index **/
     .section-carrousel{
         padding-top: 0;
@@ -120,12 +120,37 @@ nav a {
     }
     /* footer */
     .imagenes-footer{
-        padding-right: 70px;
+        padding-right: 50px;
         padding-top: 0;
+        margin-right: 20px;
     }
-    
-
-
+    .imagenes-tarjetas{
+        display: grid;
+        grid-template-columns: auto auto;
+        width: auto;
+        height: 150px;
+        
+    }
+    .contenedor-display{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+    .footerMediosPago{
+        padding-left: 50px;
+    }
+    .footerEnvios{
+        margin-right: 9px;
+        padding: 5px 0;
+    }
+    .envios-fotos{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerNuestrasRedes{
+        margin-right: 30px;
+    }
     /* aqui empieza pagina producto */
     .conteiner-productos{
         display: grid;
@@ -133,12 +158,8 @@ nav a {
         margin: 0;
         margin-bottom: 40px;
     }
-    .footerNuestrasRedes{
-        margin-right: 50px;
-    }
-    .imagenes-footer{
-        margin-right: 40px;
-    }
+    
+    
     /*zapatillas css */
     .card4 img{
         height: 230px;
@@ -233,10 +254,36 @@ nav a {
         margin: 15px;
         
     }
-    .copy{
-        display: none;
+    .footerNuestrasRedes{
+        padding-right: 0;
+        margin-right: 10px;
     }
-
+    .footerMediosPago{
+        padding-left: 0;
+    }
+    .imagenes-footer{
+        margin: 0;
+        padding: 0;
+    }
+    .footerEnvios{
+        margin: 0;
+        padding: 5px 0;
+    }
+    .imagenes-tarjetas{
+        display: flex;
+        flex-direction: column;
+        
+        margin-right: 40px;
+        height: auto;
+    }
+    .envios-fotos{
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+    }
+    .imagenes-footer{
+        margin-right: 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -267,14 +314,37 @@ nav {
 .cartas{
     margin: 10px;
 }
-.footerNuestrasRedes{
-    margin-right: 15px;
-}
 footer{
     width: auto;
 }
-.imagenes-footer{
+.footerNuestrasRedes{
     margin-right: 10px;
+}
+.imagenes-footer{
+    margin-right: 30px;
+}
+.footerMediosPago{
+    padding: 5px;
+}
+.imagenes-tarjetas{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+.footernavegacion{
+    display: none;
+}
+.nav-footer{
+    display: none;
 }
 .conteiner-destacados-grid{
     display: flex;
@@ -290,23 +360,14 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.imagenes-tarjetas{
-    display: flex;
-    flex-wrap: wrap;
-    width: 200px;
-}
 .sec-accesorios{
     margin: 70px 0;
 }
-.imagenes-tarjetas img{
-    margin: 3px;
-}
+
 .h3-contenedor h3{
     width: auto;
 }
-.copy{
-    display: none;
-}
+
 .preguntas{
     margin-top: 0;
 }
