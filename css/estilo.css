@@ -585,6 +585,9 @@ fieldset div {
     flex-direction: column;
     justify-items: center;
   }
+  #logo2 {
+    margin: 0;
+  }
   /** primera section del index **/
   .section-carrousel {
     padding-top: 0;
