@@ -189,10 +189,6 @@ footer {
   margin: 3px;
 }
 
-footer p {
-  color: lightgray;
-}
-
 .imagenes-footer {
   display: flex;
   flex-direction: row;
@@ -701,6 +697,12 @@ fieldset div {
   }
   .preguntas p {
     font-family: cursive;
+  }
+  fieldset legend {
+    font-size: 18px;
+  }
+  .formulario h4 {
+    font-size: 20px;
   }
 }
 @media (max-width: 698px) {
